@@ -17,23 +17,24 @@ html,body{
 }
 
 .image{
-	position: relative;
-	top: 40%;
-	left: 30px;
-	border: 8px solid rgb(115, 0, 153);
-	margin-top: -115px;
-	width: 230px;
-	height: 230px;
+	float: left;
+	margin-top: 50%;
+	margin-left: 18%;
+	border: 5px solid rgb(115, 0, 153);
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	background-image: url('../imagens/profile.png');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-size: 900px 600px;
+	background-position: 47% 53%;
 
 }
 
 .menu{
-	margin: 330px 0;
+	margin-top: 140%;
+	margin-left: 18%;
+	margin-right: 18%;
 	text-align: center;
 }
 
@@ -91,11 +92,12 @@ html,body{
 	font-family: sans-serif;
 }
 
-.social{
+.facebook{
 	margin-top: 20px;
+	display: inline-block;
 }
 
-.social a{
+.facebook a{
 	text-decoration: none;
 	color: white;
 	width: 60px;
@@ -107,9 +109,155 @@ html,body{
 	margin: 0 15px;
 }
 
-.social a img{
+.facebook a img{
+	margin-top: 15px;
+	width: 20px;
+	height:30px;
+}
+
+.instagram{
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.instagram a{
+	text-decoration: none;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+	border-radius: 30px;
+	display: inline-block;
+	text-align: center;
+	margin: 0 15px;
+}
+
+.instagram a img{
 	margin-top: 15px;
 	width: 30px;
 	height:30px;
 }
+
+.twitter{
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.twitter a{
+	text-decoration: none;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+	border-radius: 30px;
+	display: inline-block;
+	text-align: center;
+	margin: 0 15px;
+}
+
+.twitter a img{
+	margin-top: 15px;
+	width: 30px;
+	height:30px;
+}
+
+
+@media screen and (max-width: 1624px){
+	.image{
+		float: left;
+		margin-top: 50%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 1465px){
+	.image{
+		float: left;
+		margin-top: 50%;
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 1465px){
+	.image{
+		float: left;
+		width: 200px;
+		height: 200px;
+		margin-left: 12%;
+		background-size: 800px 500px;
+	}
+
+	.descricao h3{
+		display: flex;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	.sidebar{
+		width: 100%;
+		height: 25%;
+	}
+
+	.image{
+		float: none;
+		margin-top: 0px;
+		margin-left: 45%;
+		width: 200px;
+		height: 200px;
+		background-size: 800px 500px;
+	}
+
+	.menu{
+		display: flex;
+		margin-left: 640px;
+	}
+
+	.infos{
+		position: static;
+		margin-left: 5%;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1080px){
+	.image{
+		margin-left: 43%;
+	}
+	
+	.infos{
+		margin-left: 0px;
+		width: 70%;
+	}
+
+	.descricao h3{
+		display: inline-grid;
+	}
+}
+
+@media screen and (max-width: 780px){
+	.image{
+		margin-left: 40%;
+	}
+
+	.infos{
+		padding: 0;
+		margin-left: 100px;
+		text-align: center;
+	}
+	
+	.descricao h2{
+		font-size: 30px;
+	}
+
+	.descricao h3{
+		font-size: 15px;
+	}
+
+	.descricao p{
+		font-size: 13px;
+	}
+}
+
 
